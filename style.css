@@ -3,31 +3,54 @@
     padding: 0;
 }
 .cabecalho{
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: lightblue;
+padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(144, 203, 221);
 }
 .cartao {
-    width: 260px;
-    height: 200px;
+ width: 260px;
+ height: 200px;
 }
 .cartao-imagem{
-    width: 100%;
+width: 100%;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: rgb(215, 240, 255);
 }
 main{
-    flex: 1;
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .cabecalho-link{
-    color: rgba(0, 0, 0, 0);
-    text-decoration: none;
+color: rgb(188, 231, 236);
+text-decoration: none;
 }
 h1{
+color: rgb(17, 14, 14);
+}
+footer{
+    background-color: rgb(254, 253, 255);
+    padding: 15px 25px;
     color: black;
+}
+.cartao-interno{
+    position: relative;
+    transition:transform 0.8s;
+    transform-style: preserve-3d;
+}
+.cartao-frente, .cartao-verso{
+    poition: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgb(22, 22, 22);
+    backface-visibility: hidden;
+}
+.cartao-verso{
+    transform: rotateY(180deg)
 }
